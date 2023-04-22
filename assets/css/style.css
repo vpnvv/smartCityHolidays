@@ -57,7 +57,7 @@ Default CSS
 @import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,200;1,400;1,900&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,900&display=swap');
 
 :root {
-    --main-color: #8B3EEA;
+    --main-color: #55b9e3;
     --white-color: #ffffff;
     --black-color: #2B2540;
     --black-color-opacity: #2b2540c4;
@@ -75,7 +75,7 @@ body {
     padding: 0;
     margin: 0;
     font-size: 16px;
-    font-family: 'Google Sans','Roboto',Arial,sans-serif
+    font-family: 'Roboto', sans-serif;
 }
 
 img {
@@ -105,7 +105,7 @@ a {
     -webkit-transition: all 0.3s ease-in-out 0.1s;
     transition: all 0.3s ease-in-out 0.1s;
     outline: 0 !important;
-    color: #0d6efd;
+    color: var(--main-color);
 }
 
 a:hover {
@@ -194,7 +194,7 @@ section {
 .form-control:focus {
     color: var(--heading-color);
     background-color: #fff;
-    border: 1px solid #0d6efd;
+    border: 1px solid var(--main-color);
     outline: none;
     box-shadow: none;
 }
@@ -221,7 +221,7 @@ section {
 
 .heading_left_area h2 span {
     display: inline-block;
-    border-bottom: 1px solid #0d6efd;
+    border-bottom: 1px solid var(--main-color);
     padding-bottom: 10px;
 }
 
@@ -244,7 +244,7 @@ section {
     position: absolute;
     width: 200px;
     height: 1px;
-    background: #0d6efd;
+    background: var(--main-color);
     left: 50%;
     transform: translate(-50%, 50%);
     bottom: 0;
@@ -319,7 +319,7 @@ section {
 
 .btn_theme {
     color: var(--white-color);
-    background-color: #0d6efd;
+    background-color: var(--main-color);
     transition: var(--transition);
     box-shadow: none;
     overflow: hidden;
@@ -338,7 +338,7 @@ section {
     width: 580px;
     height: 550px;
     margin: auto;
-    background: #cc0000;
+    background: var(--black-color);
     border-radius: 50%;
     z-index: -1;
     -webkit-transform-origin: top center;
@@ -463,7 +463,7 @@ section {
 
 .btn_navber {
     color: #fff;
-    border: 2px solid #0d6efd;
+    border: 2px solid var(--main-color);
     padding: 7px 10px;
     transition: var(--transition);
     box-shadow: none;
@@ -471,9 +471,7 @@ section {
     white-space: nowrap;
     position: relative;
     z-index: 0;
-    border: 1px solid #0d6efd;
-    font-weight: 600;
-}   
+}
 
 .btn_navber:before {
     content: '';
@@ -488,11 +486,10 @@ section {
     z-index: -1;
     -webkit-transform-origin: top center;
     transform-origin: top center;
-    background: #0d6efd;
+    background: var(--main-color);
     -webkit-transform: translateX(-51%) translateY(27%) scale(.8);
     transform: translateX(-51%) translateY(27%) scale(.8);
     transition: var(--transition);
-    border: 1px solid #0d6efd;
 }
 
 .btn_navber:hover:before {
@@ -504,16 +501,11 @@ section {
     transform: translateX(-42%) translateY(-57%) scale(4);
     -webkit-transform-origin: bottom center;
     transform-origin: bottom center;
-    border: 1px solid #0d6efd;
-    color: #0d6efd;
 }
 
-.is-sticky .btn_navber:before {
-    border: 1px solid #0d6efd;
-    color: #0d6efd;
+.is-sticky .btn_navber {
+    border: 1px solid var(--white-color);
 }
-
-
 
 
 /* =========================
@@ -571,7 +563,7 @@ section {
 .theme_search_form_tabbtn .nav-tabs .nav-item.show .nav-link,
 .theme_search_form_tabbtn .nav-tabs .nav-link.active {
     color: var(--white-color);
-    background-color: #0d6efd;
+    background-color: var(--main-color);
     border-color: none;
 }
 
@@ -579,7 +571,7 @@ section {
     margin-bottom: 0;
     color: var(--black-color);
     border-radius: 6px;
-    border: 1px solid #0d6efd;
+    border: 1px solid var(--main-color);
 }
 
 .theme_search_form_tabbtn .nav-tabs .nav-link i {
@@ -624,7 +616,7 @@ section {
     line-height: 46px;
     border-radius: 50%;
     border: 3px solid #fff;
-    color: #0d6efd;
+    color: var(--main-color);
 }
 
 .flight_Search_boxed p {
@@ -730,7 +722,7 @@ section {
 .traveller-calulate-persons .passengers h6 {
     font-size: 16px;
     font-weight: 500;
-    color: #0d6efd;
+    color: var(--main-color);
 }
 
 .traveller-calulate-persons .cabin-selection {
@@ -749,12 +741,12 @@ section {
 }
 
 .traveller-calulate-persons .label-select-btn:hover {
-    background: #0d6efd;
+    background: var(--main-color);
     color: var(--white-color);
 }
 
 .traveller-calulate-persons .label-select-btn.active {
-    background: #0d6efd;
+    background: var(--main-color);
     color: var(--white-color);
 }
 
@@ -767,7 +759,7 @@ section {
     padding: 15px 0;
     font-size: 16px;
     font-weight: 500;
-    color: #0d6efd;
+    color: var(--main-color);
 }
 
 .top_form_search_button {
@@ -781,7 +773,7 @@ section {
 
 .flight_categories_search .nav-tabs .nav-item.show .nav-link,
 .flight_categories_search .nav-tabs .nav-link.active {
-    color: #0d6efd;
+    color: var(--main-color);
     border-color: none;
 }
 
@@ -810,7 +802,7 @@ section {
 }
 
 .add_multy_form button {
-    color: #0d6efd;
+    color: var(--main-color);
     border: none;
     background: transparent;
 }
@@ -978,14 +970,14 @@ section {
 .theme_nav_tab_item .nav-tabs .nav-item.show .nav-link,
 .theme_nav_tab_item .nav-tabs .nav-link.active {
     color: var(--white-color);
-    background-color: #0d6efd;
-    border-color: #0d6efd;
+    background-color: var(--main-color);
+    border-color: var(--main-color);
 }
 
 .theme_nav_tab_item .nav-tabs .nav-link {
     margin-bottom: 0;
     background: 0 0;
-    border: 1px solid #0d6efd;
+    border: 1px solid var(--main-color);
     color: var(--black-color);
     padding: 8px 30px;
     border-radius: 5px;
@@ -1041,7 +1033,7 @@ section {
     text-align: center;
     line-height: 45px;
     border-radius: 50%;
-    color: #0d6efd;
+    color: var(--main-color);
     font-size: 16px;
     font-weight: 500;
 }
@@ -1074,7 +1066,7 @@ section {
 }
 
 .theme_two_box_content h4 a:hover {
-    color: #0d6efd;
+    color: var(--main-color);
 }
 
 .theme_two_box_content p {
@@ -1083,7 +1075,7 @@ section {
 }
 
 .theme_two_box_content p .review_rating {
-    color: #0d6efd;
+    color: var(--main-color);
 }
 
 .theme_two_box_content p .review_count {
@@ -1146,7 +1138,7 @@ section {
 
 .dot_style.owl-theme .owl-dots .owl-dot.active span,
 .dot_style.owl-theme .owl-dots .owl-dot:hover span {
-    background: #0d6efd;
+    background: var(--main-color);
 }
 
 /* --Destinations Area-- */
@@ -1182,7 +1174,7 @@ section {
 }
 
 .tab_destinations_conntent h3 a:hover {
-    color: #0d6efd;
+    color: var(--main-color);
 }
 
 .tab_destinations_conntent p {
@@ -1192,7 +1184,7 @@ section {
 }
 
 .tab_destinations_conntent p span {
-    color: #0d6efd;
+    color: var(--main-color);
 }
 
 /* --News Area-- */
@@ -1238,7 +1230,7 @@ section {
 }
 
 .home_news_content h3 a:hover {
-    color: #0d6efd;
+    color: var(--main-color);
 }
 
 .home_news_content p {
@@ -1276,7 +1268,7 @@ section {
 }
 
 .home_news_big h3:hover a {
-    color: #0d6efd;
+    color: var(--main-color);
 }
 
 .home_news_big p {
@@ -1327,12 +1319,11 @@ section {
 
 /* --Footer Area-- */
 #footer_area {
-    background-image: url('../img/common/bg.png');
     padding: 100px 0px;
 }
 
 .footer_heading_area h5 {
-    border-bottom: 1px solid #0d6efd;
+    border-bottom: 1px solid var(--main-color);
     display: inline-flex;
     padding-bottom: 5px;
     font-weight: 500;
@@ -1340,7 +1331,7 @@ section {
 
 .footer_inquery_area {
     padding-top: 5px;
-    border-left: 2px solid #0d6efd;
+    border-left: 2px solid var(--main-color);
     margin-top: 25px;
     padding-left: 9px;
 }
@@ -1380,7 +1371,7 @@ section {
 }
 
 .footer_link_area ul li a:hover {
-    color: #0d6efd;
+    color: var(--main-color);
 }
 
 .soical_icon_footer li a i {
@@ -1486,8 +1477,8 @@ section {
 
 #home_two_banner .owl-carousel .owl-nav button.owl-next:hover,
 #home_two_banner .owl-carousel .owl-nav button.owl-prev:hover {
-    color: #0d6efd;
-    border: 2px solid #0d6efd;
+    color: var(--main-color);
+    border: 2px solid var(--main-color);
 }
 
 /* --Top Service Area-- */
@@ -1526,7 +1517,7 @@ section {
     position: absolute;
     width: 160px;
     height: 1px;
-    background: #0d6efd;
+    background: var(--main-color);
     left: 50%;
     transform: translate(-50%, 50%);
     bottom: 0;
@@ -1620,7 +1611,7 @@ section {
 
 /* --About Area-- */
 .about_two_left_top h5 {
-    color: #0d6efd;
+    color: var(--main-color);
     font-weight: 500;
 }
 
@@ -1671,7 +1662,7 @@ section {
 }
 
 .partner_area_left h5 {
-    color: #0d6efd;
+    color: var(--main-color);
     font-weight: 500;
 }
 
@@ -1707,7 +1698,7 @@ section {
     display: block;
     width: 50px;
     height: 50px;
-    background: #0d6efd;
+    background: var(--main-color);
     border-radius: 50%;
     animation: pulse-border 1500ms ease-out infinite;
 }
@@ -1722,7 +1713,7 @@ section {
     display: block;
     width: 50px;
     height: 50px;
-    background: #0d6efd;
+    background: var(--main-color);
     border-radius: 50%;
     transition: all 200ms;
 }
@@ -1785,7 +1776,7 @@ section {
 }
 
 .flep_choose_box {
-    background-color: #0d6efd;
+    background-color: var(--main-color);
     transform: rotateY(180deg);
     border-radius: 12px;
 }
@@ -1888,7 +1879,7 @@ section {
 }
 
 .sm_call_number h2 a:hover {
-    color: #0d6efd;
+    color: var(--main-color);
 }
 
 .home_client_wrpper {
@@ -1914,7 +1905,7 @@ section {
 .home_client_wrpper h3 {
     padding-top: 35px;
     font-weight: 500;
-    color: #0d6efd;
+    color: var(--main-color);
 }
 
 .client_two_content {
@@ -1942,7 +1933,7 @@ section {
 
 .client_two_author h6 {
     padding-top: 5px;
-    color: #0d6efd;
+    color: var(--main-color);
     font-weight: 600;
 }
 
@@ -1973,7 +1964,7 @@ section {
 
 #hometwo_clinet_area .owl-theme .owl-dots .owl-dot.active span,
 #hometwo_clinet_area .owl-theme .owl-dots .owl-dot:hover span {
-    background: #0d6efd;
+    background: var(--main-color);
 }
 /* =============================
         Home Page Three
@@ -2018,7 +2009,7 @@ section {
     bottom: 0;
 }
 .three_heading_area{
-    color: #0d6efd;
+    color: var(--main-color);
     font-weight: 400;
     position: relative;
 }
@@ -2029,7 +2020,7 @@ section {
     height: 1px;
     left: 145px;
     top: 13px;
-    background-color: #0d6efd;
+    background-color: var(--main-color);
 }
 .three_about_right h4{
     padding-bottom:10px;
@@ -2059,7 +2050,7 @@ section {
 
 .about_counter_item p{
     padding-top: 0;
-    color: #0d6efd;
+    color: var(--main-color);
     font-size: 18px;
     font-weight: 500;
 }
@@ -2113,7 +2104,7 @@ font-weight: 500;
 }
 #three_We_area .owl-carousel .owl-nav button.owl-next:hover, 
 #three_We_area .owl-carousel .owl-nav button.owl-prev:hover {
-    background: #0d6efd;
+    background: var(--main-color);
     color: var(--white-color);
 }
 
@@ -2138,7 +2129,7 @@ font-weight: 500;
 }
 .arrow_style.owl-carousel .owl-nav button.owl-next:hover, 
 .arrow_style.owl-carousel .owl-nav button.owl-prev:hover{
-    background: #0d6efd;
+    background: var(--main-color);
     color: var(--white-color);
 }
 .arrow_style.owl-carousel .owl-nav button.owl-next {
@@ -2181,7 +2172,7 @@ font-weight: 500;
 /* --Banner Area-- */
 .navbar_color_black .main-navbar .navbar .navbar-nav .nav-item a {
     color: var(--black-color);
-    font-weight: 500;
+    font-weight: 400;
 }
 .navbar_color_black .topbar-list li a {
     color: var(--black-color);
@@ -2284,7 +2275,7 @@ padding-bottom: 30px;
 .common_card_four_list li{
     display: inline-flex;
     font-size: 12px;
-    font-weight: 600;
+    font-weight: 400;
     color: #727178;
     align-items: center;
 }
@@ -2300,10 +2291,10 @@ padding-bottom: 30px;
 .common_card_four_text h3 a{
     font-size: 20px;
     color: var(--black-color);
-    font-weight: 500;
+    font-weight: 400;
 } 
 .common_card_four:hover .common_card_four_text h3 a{
-    color: #0d6efd;
+    color: var(--main-color);
 }
 .common_card_four_text p{
     font-size: 14px;
@@ -2321,7 +2312,7 @@ padding-bottom: 30px;
 }
 
 .common_card_four_bottom_left p{
-    color: #0d6efd;
+    color: var(--main-color);
     font-size: 16px;
     font-weight: 500;
 }
@@ -2352,7 +2343,7 @@ padding-bottom: 30px;
 }
 .button_style_top_left.owl-carousel .owl-nav button.owl-next:hover,
 .button_style_top_left.owl-carousel .owl-nav button.owl-prev:hover {
-    background: #0d6efd;
+    background: var(--main-color);
     color: var(--white-color);
 }
 
@@ -2371,7 +2362,7 @@ padding-bottom: 30px;
     font-weight: 500;
 }
 .theme_nav_tab_four_item .nav-tabs .nav-link.active{
-background-color: #0d6efd;
+background-color: var(--main-color);
 color: var(--white-color);
 }
 /* --Tour Type Boxed-- */
@@ -2402,15 +2393,14 @@ padding-top: 5px;
 .section_heading_left_view_all{
     text-align: right;
     padding-top: 45px;
-    color: #000000;
 }
 .section_heading_left_view_all a{
-    color: #000000;
+    color: var(--main-color);
     font-size: 18px;
     font-weight: 500;
 }
 .section_heading_left_view_all a:hover{
-    color: #0d6efd;
+    color: var(--black-color);
 }
 /* --Top Details -- */
 .top_details_four_item{
@@ -2447,7 +2437,7 @@ padding-top: 5px;
 }
 .countre_four_item h5{
     font-size: 16px;
-    color: #0d6efd;
+    color: var(--main-color);
     padding-top: 2px;
     font-weight: 500;
 }
@@ -2479,7 +2469,7 @@ padding-top: 5px;
 }
 .test_four_author_fill h3{
     font-weight: 500;
-    color: #0d6efd;
+    color: var(--main-color);
 }
 .test_four_inner_content{
     padding-top: 18px;
@@ -2544,7 +2534,7 @@ transform:scale(1.1);
     color: var(--black-color);
 }
 .news_card_four_wrapper:hover .news_card_four_heading h3 a{
-    color: #0d6efd;
+    color: var(--main-color);
 }
 .navbar_color_black .is-sticky .main-navbar .navbar .navbar-nav .nav-item a {
     color: var(--white-color);
@@ -2575,7 +2565,7 @@ margin-bottom: 30px;
     padding-right: 5px;
 }
 .new_four_card_lists ul li span{
- color: #0d6efd;
+ color: var(--main-color);
 }
 .news_four_card_conrent h3{
     padding-top: 12px;
@@ -2586,7 +2576,7 @@ margin-bottom: 30px;
     color: var(--black-color);
 }
 .news_four_card_conrent h3 a:hover{
-    color: #0d6efd;
+    color: var(--main-color);
 }
 .news_four_card_conrent p{
     padding-top: 8px;
@@ -2643,7 +2633,7 @@ margin-bottom: 30px;
     padding-bottom: 8px;
 }
 .contact_detais_item h3{
- color: #0d6efd;
+ color: var(--main-color);
 }
 .contact_map_area iframe{
     width: 100%;
@@ -2764,7 +2754,7 @@ position: relative;
 }
 .cruise_content_top_right h5{
     font-size: 16px;
-    color: #0d6efd;
+    color: var(--main-color);
     font-weight: 500;
 }
 .cruise_content_top_right h4{
@@ -2778,7 +2768,7 @@ position: relative;
 }
 .cruise_content_middel_left h5{
     font-size: 16px;
-    color: #0d6efd;
+    color: var(--main-color);
     font-weight: 500;
     padding-bottom: 4px;
 }
@@ -2887,7 +2877,7 @@ position: relative;
     font-weight: 600;
 }
 .bus_price_total h5 span{
-    color: #0d6efd;
+    color: var(--main-color);
 }
 .bus_ticket_continue {
     text-align: right;
@@ -2958,11 +2948,11 @@ position: relative;
 }
 
 .visa_category_item ul li a:hover {
-    color: #0d6efd;
+    color: var(--main-color);
 }
 
 .visa_info_side_call {
-    background-color: #0d6efd;
+    background-color: var(--main-color);
     text-align: center;
     color: var(--white-color);
     padding: 30px 10px;
@@ -3016,7 +3006,7 @@ position: relative;
 }
 
 .download_pdf_area_visa:hover .downloads_pdf_text_visa a h3 {
-    color: #0d6efd;
+    color: var(--main-color);
 }
 
 .visa_request_side_form form .form-group {
@@ -3036,10 +3026,10 @@ position: relative;
 =========================*/
 /* --Common Banner-- */
 #common_banner {
-    background-image: url('../img/banner/3.jpg');
-    padding: 20px 0 130px 0;
-    /* background-repeat: no-repeat;
-    background-size: cover; */
+    background-image: url('../img/banner/b5.jpg');
+    padding: 166px 0 44px 0;
+    background-repeat: no-repeat;
+    background-size: cover;
 }
 
 .common_bannner_text {
@@ -3086,7 +3076,7 @@ position: relative;
 }
 
 .common_bannner_text ul li a:hover {
-    color: #0d6efd;
+    color: var(--main-color);
 }
 
 /* --Search Form-- */
@@ -3095,7 +3085,7 @@ position: relative;
 }
 
 .pagination_area .page-link {
-    color: #0d6efd;
+    color: var(--main-color);
     border-radius: 5px;
     padding: 2px 8px;
     font-size: 14px;
@@ -3104,14 +3094,14 @@ position: relative;
 .pagination_area .page-link:hover {
     z-index: 2;
     color: var(--white-color);
-    background-color: #0d6efd;
-    border-color: #0d6efd;
+    background-color: var(--main-color);
+    border-color: var(--main-color);
 }
 
 .pagination_area .page-link:focus {
     z-index: 2;
     color: var(--white-color);
-    background-color: #0d6efd;
+    background-color: var(--main-color);
     outline: none;
     box-shadow: none;
 }
@@ -3149,7 +3139,7 @@ position: relative;
     border: none;
     background: transparent;
     padding: 0;
-    color: #0d6efd;
+    color: var(--main-color);
     font-weight: 500;
 }
 
@@ -3178,7 +3168,7 @@ html:not([dir="rtl"]) .noUi-horizontal .noUi-handle {
 }
 
 .noUi-connect {
-    background: #0d6efd;
+    background: var(--main-color);
 }
 
 .review_star {
@@ -3191,7 +3181,7 @@ html:not([dir="rtl"]) .noUi-horizontal .noUi-handle {
 }
 
 .color_theme {
-    color: #0d6efd;
+    color: var(--main-color);
 }
 
 .color_asse {
@@ -3234,7 +3224,7 @@ html:not([dir="rtl"]) .noUi-horizontal .noUi-handle {
 .tour_details_right_box_heading h3 {
     font-weight: 500;
     font-size: 22px;
-    border-bottom: 1px solid #0d6efd;
+    border-bottom: 1px solid var(--main-color);
     padding-bottom: 10px;
     display: inline-block;
 }
@@ -3260,7 +3250,7 @@ html:not([dir="rtl"]) .noUi-horizontal .noUi-handle {
 
 .tour_package_details_bar_list h5 {
     font-weight: 500;
-    border-bottom: 1px solid #0d6efd;
+    border-bottom: 1px solid var(--main-color);
     padding-bottom: 10px;
     display: inline-block;
 }
@@ -3284,7 +3274,7 @@ html:not([dir="rtl"]) .noUi-horizontal .noUi-handle {
 
 .tour_package_details_bar_price h5 {
     font-weight: 500;
-    border-bottom: 1px solid #0d6efd;
+    border-bottom: 1px solid var(--main-color);
     padding-bottom: 10px;
     display: inline-block;
 }
@@ -3304,7 +3294,7 @@ html:not([dir="rtl"]) .noUi-horizontal .noUi-handle {
     padding-left: 10px;
     font-size: 22px;
     font-weight: 500;
-    color: #0d6efd;
+    color: var(--main-color);
 }
 
 .tour_package_bar_price h3 sub {
@@ -3387,7 +3377,7 @@ html:not([dir="rtl"]) .noUi-horizontal .noUi-handle {
 }
 
 .select_person_right button:hover {
-    background: #0d6efd;
+    background: var(--main-color);
     color: var(--white-color);
 }
 
@@ -3416,7 +3406,7 @@ html:not([dir="rtl"]) .noUi-horizontal .noUi-handle {
 }
 
 .main_spical_check p span {
-    color: #0d6efd;
+    color: var(--main-color);
 }
 
 .proceed_booking_btn a {
@@ -3435,12 +3425,12 @@ html:not([dir="rtl"]) .noUi-horizontal .noUi-handle {
 }
 
 .tour_details_top_heading_right h4 {
-    color: #0d6efd;
+    color: var(--main-color);
 }
 
 .tour_details_top_heading_right h6 {
     font-size: 16px;
-    color: #0d6efd;
+    color: var(--main-color);
     padding-top: 5px;
 }
 
@@ -3495,7 +3485,7 @@ html:not([dir="rtl"]) .noUi-horizontal .noUi-handle {
 }
 
 .heading_theme {
-    border-bottom: 1px solid #0d6efd;
+    border-bottom: 1px solid var(--main-color);
     padding-bottom: 10px;
     display: inline-block;
     font-weight: 500;
@@ -3533,7 +3523,7 @@ html:not([dir="rtl"]) .noUi-horizontal .noUi-handle {
 }
 
 .tour_details_boxed_inner .accordion-button:not(.collapsed) {
-    color: #0d6efd;
+    color: var(--main-color);
     background-color: #fff;
     box-shadow: none;
 }
@@ -3627,7 +3617,7 @@ html:not([dir="rtl"]) .noUi-horizontal .noUi-handle {
 
 .review_star_all i {
     font-size: 14px;
-    color: #0d6efd;
+    color: var(--main-color);
 }
 
 .all_review_text {
@@ -3669,7 +3659,7 @@ html:not([dir="rtl"]) .noUi-horizontal .noUi-handle {
 }
 
 .all_review_small_img_item h5 {
-    color: #0d6efd;
+    color: var(--main-color);
     cursor: pointer;
     font-size: 22px;
     font-weight: 600;
@@ -3732,7 +3722,7 @@ html:not([dir="rtl"]) .noUi-horizontal .noUi-handle {
 }
 
 .top_destinations_box_content h4 a:hover {
-    color: #0d6efd;
+    color: var(--main-color);
 }
 
 .top_destinations_box_content p {
@@ -3773,7 +3763,7 @@ html:not([dir="rtl"]) .noUi-horizontal .noUi-handle {
 }
 
 .heart_destinations i:hover {
-    color: #0d6efd;
+    color: var(--main-color);
 }
 
 .edit_date_form .form-control {
@@ -3796,7 +3786,7 @@ html:not([dir="rtl"]) .noUi-horizontal .noUi-handle {
 }
 
 .edit_person p {
-    color: #0d6efd;
+    color: var(--main-color);
     cursor: pointer;
 }
 
@@ -3814,7 +3804,7 @@ html:not([dir="rtl"]) .noUi-horizontal .noUi-handle {
 .form-control:focus {
     color: var(--heading-color);
     background-color: #fff;
-    border: 2px dashed #0d6efd;
+    border: 2px dashed var(--main-color);
     outline: none;
     box-shadow: none;
 }
@@ -3895,7 +3885,7 @@ html:not([dir="rtl"]) .noUi-horizontal .noUi-handle {
     font-size: 14px;
     font-style: italic;
     font-weight: 400 !important;
-    color: #0d6efd;
+    color: var(--main-color);
     cursor: pointer;
 }
 
@@ -3955,7 +3945,7 @@ html:not([dir="rtl"]) .noUi-horizontal .noUi-handle {
 }
 
 .about_offer_text h3 span {
-    color: #0d6efd;
+    color: var(--main-color);
 }
 
 .about_offer_text h2 {
@@ -3969,8 +3959,8 @@ html:not([dir="rtl"]) .noUi-horizontal .noUi-handle {
 }
 
 .about_offer_text a:hover {
-    color: #0d6efd;
-    border-bottom: 1px solid #0d6efd;
+    color: var(--main-color);
+    border-bottom: 1px solid var(--main-color);
 }
 
 .about_service_boxed {
@@ -4029,7 +4019,7 @@ html:not([dir="rtl"]) .noUi-horizontal .noUi-handle {
 .counter_item h3 {
     font-size: 35px;
     font-weight: 500;
-    color: #0d6efd;
+    color: var(--main-color);
     padding-top: 6px;
     letter-spacing: 2px;
 }
@@ -4057,7 +4047,7 @@ html:not([dir="rtl"]) .noUi-horizontal .noUi-handle {
 
 .guide_heading_area h3 {
     font-weight: 400;
-    color: #0d6efd;
+    color: var(--main-color);
 }
 
 .tour_guides_boxed {
@@ -4095,7 +4085,7 @@ html:not([dir="rtl"]) .noUi-horizontal .noUi-handle {
 .tour_guide_content h3 {
     font-size: 20px;
     font-weight: 500;
-    color: #0d6efd;
+    color: var(--main-color);
 }
 
 .tour_guide_content p {
@@ -4120,7 +4110,7 @@ html:not([dir="rtl"]) .noUi-horizontal .noUi-handle {
     border-radius: 50%;
     box-shadow: 4px 6px 20px rgba(0, 0, 0, 0.08);
     transition: var(--transition);
-    color: #0d6efd;
+    color: var(--main-color);
     margin-left: 8px;
 }
 
@@ -4129,7 +4119,7 @@ html:not([dir="rtl"]) .noUi-horizontal .noUi-handle {
 }
 
 .tour_guide_content li:hover {
-    background: #0d6efd;
+    background: var(--main-color);
 }
 
 .tour_guide_content li:hover a {
@@ -4186,7 +4176,7 @@ html:not([dir="rtl"]) .noUi-horizontal .noUi-handle {
 }
 
 .faqs_call_area {
-    background: #0d6efd;
+    background: var(--main-color);
     text-align: center;
     padding: 90px 30px;
     border-radius: 10px;
@@ -4291,7 +4281,7 @@ html:not([dir="rtl"]) .noUi-horizontal .noUi-handle {
 }
 
 .news_area_top_right h2 a:hover {
-    color: #0d6efd;
+    color: var(--main-color);
 }
 
 .news_area_top_right p {
@@ -4371,7 +4361,7 @@ html:not([dir="rtl"]) .noUi-horizontal .noUi-handle {
 }
 
 .news_item_content h3 a:hover {
-    color: #0d6efd;
+    color: var(--main-color);
 }
 
 .news_item_content p {
@@ -4391,7 +4381,7 @@ html:not([dir="rtl"]) .noUi-horizontal .noUi-handle {
     color: var(--black-color);
 }
 .news_two_content h2 a:hover{
-    color: #0d6efd;
+    color: var(--main-color);
 }
 .news_two_author{
     display: flex;
@@ -4418,7 +4408,7 @@ html:not([dir="rtl"]) .noUi-horizontal .noUi-handle {
     position: absolute;
     width: 100%;
     height: 2px;
-    background-color: #0d6efd;
+    background-color: var(--main-color);
     left: 0;
     bottom: -1px;
 
@@ -4452,10 +4442,10 @@ padding-top: 25px;
     font-family: 'Poppins', sans-serif;
     transition: var(--transition);
     border-radius: 12px;
-    border-left: 5px solid #0d6efd;
+    border-left: 5px solid var(--main-color);
 }
 .news_sidebar_category li a:hover{
-    color: #0d6efd;
+    color: var(--main-color);
     transform: translateX(10px);
 }
 .news_sidebar_tags li{
@@ -4472,7 +4462,7 @@ padding-top: 25px;
     border-radius: 10px;
 }
 .news_sidebar_tags li a:hover{
-    background-color: #0d6efd;
+    background-color: var(--main-color);
     color: var(--white-color);
 }
 .sidebar_advasting_area a img{
@@ -4515,7 +4505,7 @@ padding-top: 25px;
 .news_details_content_area ul li i {
     font-size: 10px;
     padding-right: 7px;
-    color: #0d6efd;
+    color: var(--main-color);
 }
 
 .news_details_left_img {
@@ -4632,7 +4622,7 @@ textarea {
 }
 
 .recent_news_text h5 a:hover {
-    color: #0d6efd;
+    color: var(--main-color);
 }
 
 .recent_news_text p {
@@ -4645,7 +4635,7 @@ textarea {
 .recent_news_text p i {
     font-size: 6px;
     margin: 0 7px;
-    color: #0d6efd;
+    color: var(--main-color);
 }
 
 .news_tags_area {
@@ -4667,12 +4657,12 @@ textarea {
 }
 
 .news_tags_area ul li a:hover {
-    background: #0d6efd;
+    background: var(--main-color);
     color: var(--white-color);
 }
 
 .news_tags_area ul li a.active {
-    background: #0d6efd;
+    background: var(--main-color);
     color: var(--white-color);
 }
 
@@ -4695,12 +4685,12 @@ textarea {
     border-radius: 50%;
     box-shadow: 4px 6px 20px rgb(0 0 0 / 8%);
     transition: var(--transition);
-    color: #0d6efd;
+    color: var(--main-color);
     margin-left: 15px;
 }
 
 .share_icon_area li:hover {
-    background: #0d6efd;
+    background: var(--main-color);
 }
 
 .share_icon_area li:hover a {
@@ -4743,7 +4733,7 @@ textarea {
 }
 
 .dashboard_sidebar_user p a:hover {
-    color: #0d6efd;
+    color: var(--main-color);
 }
 
 .dashboard_menu_area {
@@ -4760,7 +4750,7 @@ textarea {
 }
 
 .dashboard_menu_area ul li:hover {
-    color: #0d6efd;
+    color: var(--main-color);
     cursor: pointer;
 }
 
@@ -4769,11 +4759,11 @@ textarea {
 }
 
 .dashboard_menu_area ul li a.active {
-    color: #0d6efd;
+    color: var(--main-color);
 }
 
 .dashboard_menu_area ul li a:hover {
-    color: #0d6efd;
+    color: var(--main-color);
 }
 
 .dashboard_menu_area ul li i {
@@ -4847,7 +4837,7 @@ textarea {
     content: "";
     width: 140px;
     height: 2px;
-    background: #0d6efd;
+    background: var(--main-color);
     position: absolute;
     left: 0;
     bottom: 0;
@@ -4909,7 +4899,7 @@ textarea {
     right: 15px;
     font-size: 12px;
     cursor: pointer;
-    color: #0d6efd;
+    color: var(--main-color);
     font-weight: 500;
 }
 
@@ -4922,7 +4912,7 @@ textarea {
 }
 
 .notification_top_heading p {
-    color: #0d6efd;
+    color: var(--main-color);
     padding-left: 20px;
     position: absolute;
     left: 147px;
@@ -4993,11 +4983,11 @@ textarea {
 }
 
 .btn_border {
-    border: 1px solid #0d6efd;
+    border: 1px solid var(--main-color);
 }
 
 .btn_border:hover {
-    background: #0d6efd;
+    background: var(--main-color);
 }
 
 /* --wallet Page-- */
@@ -5019,7 +5009,7 @@ textarea {
     content: "";
     width: 100px;
     height: 2px;
-    background: #0d6efd;
+    background: var(--main-color);
     position: absolute;
     left: 0;
     bottom: 0;
@@ -5061,7 +5051,7 @@ textarea {
 .main_range_price::after {
     content: "30%";
     width: 49%;
-    background: #0d6efd;
+    background: var(--main-color);
     height: 13px;
     position: absolute;
     border-radius: 30px;
@@ -5107,18 +5097,18 @@ textarea {
 }
 
 .btn_add_bal {
-    border: 1px solid #0d6efd;
+    border: 1px solid var(--main-color);
     font-size: 14px;
     margin-left: 10px;
     transition: var(--transition);
 }
 
 .btn_add_bal:hover {
-    background: #0d6efd;
+    background: var(--main-color);
 }
 
 .btn_add_bal.active {
-    background: #0d6efd;
+    background: var(--main-color);
     color: var(--white-color);
 }
 
@@ -5134,7 +5124,7 @@ textarea {
 
 .btn_modal_closed button {
     background: var(--white-color);
-    border: 2px solid #0d6efd;
+    border: 2px solid var(--main-color);
     height: 40px;
     width: 40px;
     border-radius: 50%;
@@ -5142,7 +5132,7 @@ textarea {
 }
 
 .btn_modal_closed button:hover {
-    background: #0d6efd;
+    background: var(--main-color);
     color: var(--white-color);
     transition: var(--transition);
 }
@@ -5184,7 +5174,7 @@ textarea {
 }
 
 #main_author_form .form-group a:hover {
-    color: #0d6efd;
+    color: var(--main-color);
 }
 
 .common_form_submit {
@@ -5241,7 +5231,7 @@ textarea {
 .otSc {
     margin: 0;
     margin-right: 34px;
-    border: 1px solid #0d6efd;
+    border: 1px solid var(--main-color);
     padding: 5px 0px;
     font-size: 22px;
     text-align: center;
@@ -5349,7 +5339,7 @@ textarea {
 
 .flight_search_right h2 sup {
     font-size: 13px;
-    color: #0d6efd;
+    color: var(--main-color);
     font-weight: 600;
     top: -19px;
     padding-left: 5px;
@@ -5379,11 +5369,11 @@ textarea {
 }
 
 .load_more_flight button {
-    border: 1px solid #0d6efd;
+    border: 1px solid var(--main-color);
 }
 
 .load_more_flight button:hover {
-    background: #0d6efd;
+    background: var(--main-color);
 }
 
 .flight_policy_refund {
@@ -5602,7 +5592,7 @@ textarea {
 }
 
 .room_booking_heading h3 a:hover {
-    color: #0d6efd;
+    color: var(--main-color);
 }
 
 .room_fasa_area ul {
@@ -5626,7 +5616,7 @@ textarea {
 
 .room_person_select h3 {
     font-size: 18px;
-    color: #0d6efd;
+    color: var(--main-color);
     font-weight: 600;
     padding-bottom: 15px;
 }
@@ -5646,7 +5636,7 @@ textarea {
 .room_select_area .nav-tabs .nav-item.show .nav-link,
 .room_select_area .nav-tabs .nav-link.active {
     color: var(--white-color);
-    background-color: #0d6efd;
+    background-color: var(--main-color);
     border-color: #dee2e6 #dee2e6 #fff;
 }
 
@@ -5746,7 +5736,7 @@ textarea {
 }
 
 .video_play_button a:hover {
-    color: #0d6efd;
+    color: var(--main-color);
 }
 
 .video_play_button h4 {
@@ -5845,7 +5835,7 @@ textarea {
     width: 5px;
     height: 20px;
     border-radius: 20%;
-    background: #0d6efd
+    background: var(--main-color)
 }
 
 .preloader .lds-spinner div:nth-child(1) {
@@ -5969,7 +5959,7 @@ textarea {
     top: 0;
     right: 15px;
     color: #fff;
-    background-color: #0d6efd;
+    background-color: var(--main-color);
     z-index: 4;
     width: 40px;
     text-align: center;
@@ -6042,27 +6032,9 @@ textarea {
     visibility: hidden
 }
 
-/* width */
-*::-webkit-scrollbar {
-    width: 10px;
-  }
-  
-  /* Track */
-  *::-webkit-scrollbar-track {
-    background: #f1f1f1; 
-  }
-   
-  /* Handle */
-  *::-webkit-scrollbar-thumb {
-    background: #5f9ffe; 
-  }
-  
-  /* Handle on hover */
-  *::-webkit-scrollbar-thumb:hover {
-    background: #0d6efd; 
-  }
-
-
-  .about-icon-text h5 a:hover{
-    color: #cc0000;
-  }
+.go-top:hover i:last-child,
+.go-top:focus i:last-child {
+    opacity: 1;
+    visibility: visible;
+    top: 50%
+}
